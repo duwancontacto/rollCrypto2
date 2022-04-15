@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react'
+import React, { useState, useRef } from 'react'
 import cars from "../assets/img/video.mp4"
 
 import { TiDocumentText } from 'react-icons/ti';
