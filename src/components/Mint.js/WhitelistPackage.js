@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 import sobre1 from "../../assets/img/sobre.mp4"
 import sobre2 from "../../assets/img/sobre2.mp4"

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+/* import { useEffect } from 'react' */
 import { ConnectWallet } from '../store/actions/Web3Actions'
 import { useDispatch } from "react-redux"
 
@@ -7,7 +7,7 @@ import { injected } from '../utils/connectors'
 
 export default function useConnectWallet() {
 
-    const { library, activate, account } = useWeb3React()
+    const { activate, account } = useWeb3React()
     const dispatch = useDispatch()
 
 
@@ -32,9 +32,9 @@ export default function useConnectWallet() {
     }
 
 
-    useEffect(() => {
-        if (account) dispatch(ConnectWallet(account))
-    }, [account])
+    /*    useEffect(() => {
+           if (account) dispatch(ConnectWallet(account))
+       }, [account]) */
 
 
 
