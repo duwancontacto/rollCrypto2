@@ -1,6 +1,6 @@
 /* import { useEffect } from 'react' */
-import { ConnectWallet } from '../store/actions/Web3Actions'
-import { useDispatch } from "react-redux"
+/* import { ConnectWallet } from '../store/actions/Web3Actions' */
+/* import { useDispatch } from "react-redux" */
 
 import { useWeb3React } from '@web3-react/core'
 import { injected } from '../utils/connectors'
@@ -8,7 +8,7 @@ import { injected } from '../utils/connectors'
 export default function useConnectWallet() {
 
     const { activate, account } = useWeb3React()
-    const dispatch = useDispatch()
+    /*    const dispatch = useDispatch() */
 
 
     const onClickConnectWallet = async () => {

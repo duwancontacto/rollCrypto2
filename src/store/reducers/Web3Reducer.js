@@ -10,7 +10,7 @@ const initialState = {
 }
 
 
-export default function (state = initialState, action) {
+export default function web3Reducer(state = initialState, action) {
 
     switch (action.type) {
         case CONNECT_WALLET: return { ...state, account: action.payload }
