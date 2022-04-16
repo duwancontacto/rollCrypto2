@@ -1,21 +1,19 @@
-import React from 'react'
-
-import Landing from "../src/components/Landing"
-/* import Mint from './components/Mint.js/Mint' */
-
-
-
+import React, { lazy, Suspense } from 'react'
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+import LoadingSuspente from './components/LoadingSuspente'
+const Landing = lazy(() => import("./components/Landing"))
+const Mint = lazy(() => import("./components/Mint.js/Mint"))
 
 export default function App() {
   return (
-    <div>
-      <Landing />
+    <Router>
 
+      <Routes>
+        <Route path="/" element={<Suspense fallback={<LoadingSuspente />}> <Landing /> </Suspense>} />
+        <Route path="/whitelist" element={<Suspense fallback={<LoadingSuspente />}> <Mint /> </Suspense>} />
 
-
-
-      {/*   <Mint /> */}
-    </div>
+      </Routes>
+    </Router>
   )
 }
 

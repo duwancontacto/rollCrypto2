@@ -6,9 +6,8 @@
 
 
 .fondo{
-  background: rgb(109,122,143);
-background: linear-gradient(90deg, rgba(109,122,143,1) 22%, rgba(52,121,208,0.8631827731092436) 37%, rgba(62,142,194,1) 45%, rgba(73,111,172,1) 59%, rgba(79,92,159,1) 66%, rgba(76,102,166,1) 81%, rgba(0,212,255,1) 100%);
-}
+  background-color: #000;
+  background-image: radial-gradient(46.42% 61.12% at 51.98% -2.35%, rgba(64, 64, 64, 0.8) 0%, rgba(70, 70, 70, 0) 100%);}
 
 .fondo-boton{
   background: rgb(68,181,172);

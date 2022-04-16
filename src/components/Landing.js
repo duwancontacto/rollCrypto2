@@ -17,6 +17,8 @@ import Chainlink from "../assets/img/chainlink.png"
 import unity from "../assets/img/unity.png"
 import pancakeswap from "../assets/img/pancakeswap.png"
 
+import { useNavigate } from "react-router-dom"
+
 
 import ModalMenu from '../components/ModalMenu';
 import Modal from './Modal';
@@ -24,27 +26,20 @@ import Modal from './Modal';
 
 
 function App() {
+    const history = useNavigate()
     const [modal, setModal] = useState(false)
-
-
     const videoRef = useRef()
     const [botonActive, setBotonActive] = useState(false)
     return (
 
         <div className="headerComponent">
-            <Modal modal={modal} setModal={setModal} >
 
-                <h3 className=' ml-3 mt-5 my-2 text-[#f9c74f] font-semibold text-3xl font-titulo'>Coming Soon...</h3>
-
-
-            </Modal>
-            <div className="videoContainer">
-                <video ref={videoRef} muted src={cars} autoPlay={true} className="w-full relative top-0 lg:top-[-100px]" />
-
-            </div>
-
+            <Modal modal={modal} setModal={setModal} > <h3 className=' ml-3 mt-5 my-2 text-[#f9c74f] font-semibold text-3xl font-titulo'>Coming Soon...</h3></Modal>
             <ModalMenu botonActive={botonActive} setBotonActive={setBotonActive} />
+
+            <div className="videoContainer"> <video ref={videoRef} muted src={cars} autoPlay={true} className="w-full relative top-0 lg:top-[-100px]" /></div>
             <div className="overlay">  </div>
+
             <div className="absolutee headerTitle">
                 {botonActive === false && <button className='cursor-pointer absolute left-5 top-5 z-[99]' onClick={() => { setBotonActive(true) }} >< GiHamburgerMenu /></button>}
 
@@ -62,7 +57,7 @@ function App() {
                 </div>
 
                 <div className=' absolute bottom-[50px] w-full flex justify-center flex-col lg:flex-row p-2 md:p-2'>
-                    <button onClick={() => setModal(true)} className='flex items-center bg-[#4361ee] mt-3 justify-center mx-2 lg:mt-0 px-2 rounded-md py-1 cursor-pointer fondo-botones '><p className='mx-1'>Whitelist </p><TiDocumentText size={"1.6rem"} /></button>
+                    <button onClick={() => { history("/whitelist") }} className='flex items-center bg-[#4361ee] mt-3 justify-center mx-2 lg:mt-0 px-2 rounded-md py-1 cursor-pointer fondo-botones '><p className='mx-1'>Whitelist </p><TiDocumentText size={"1.6rem"} /></button>
                     <button className='flex items-center bg-[#4361ee] mt-3 justify-center mx-2 lg:mt-0 px-2 rounded-md  py-1 cursor-pointer text-sm fondo-botones '><p className='mx-1'>Whitepaper</p> <CgFileDocument size={"1.4rem"} color={"#fff"} /></button>
                     <button onClick={() => setModal(true)} className='flex items-center bg-[#4361ee] mt-3 justify-center  mx-2 lg:mt-0 px-0 md:px-1 rounded-md  py-1 cursor-pointer text-m-sm md:text-md fondo-botones  '><p p className='mx-1'>Play the Game </p><RiGamepadLine size={"1.4rem"} className="mr-2" /></button>
 
