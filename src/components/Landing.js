@@ -7,21 +7,17 @@ import { RiGamepadLine } from 'react-icons/ri';
 import { GrInstagram } from 'react-icons/gr';
 import { FiTwitter } from 'react-icons/fi';
 import { SiDiscord } from 'react-icons/si';
-import { MdCopyright } from 'react-icons/md';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { BsTelegram } from 'react-icons/bs';
 import { AiFillYoutube } from 'react-icons/ai';
-import apeswap from "../assets/img/apeswap.png"
-import binance from "../assets/img/binance.png"
-import Chainlink from "../assets/img/chainlink.png"
-import unity from "../assets/img/unity.png"
-import pancakeswap from "../assets/img/pancakeswap.png"
+
 
 import { useNavigate } from "react-router-dom"
 
 
 import ModalMenu from '../components/ModalMenu';
 import Modal from './Modal';
+import Footer from './Footer';
 
 
 
@@ -62,21 +58,8 @@ function App() {
                     <button onClick={() => setModal(true)} className='flex items-center bg-[#4361ee] mt-3 justify-center  mx-2 lg:mt-0 px-0 md:px-1 rounded-md  py-1 cursor-pointer text-m-sm md:text-md fondo-botones  '><p p className='mx-1'>Play the Game </p><RiGamepadLine size={"1.4rem"} className="mr-2" /></button>
 
                 </div>
-                <div className='w-[100%] h-[60px] absolute   bottom-0  flex justify-between items-center'>
-                    <div className=' mx-6 hidden md:flex '>
+                <Footer />
 
-                        <div className='flex items-center w-[6rem] cursor-pointer '><img src={apeswap} alt="apeswap" /></div>
-                        <div className='flex  items-center w-[5rem] mx-3  cursor-pointer'><img src={binance} alt="binance" /></div>
-                        <div className='flex  items-center w-[5rem]  cursor-pointer'><img src={Chainlink} alt="chainlink" /></div>
-                        <div className='flex  items-center w-[4rem] mx-3  cursor-pointer'><img src={unity} alt="uniy" /></div>
-                        <div className='flex  items-center w-[6rem]  cursor-pointer '><img src={pancakeswap} alt="pancakeswap" /></div>
-                    </div>
-
-
-                    <div className='flex justify-center items-center mx-6'>
-                        <MdCopyright />
-                        <p className='text-md font-bold ml-2'>2022 , Good Roll Crypto.All Rights Reserved</p>
-                    </div></div>
 
 
             </div>
