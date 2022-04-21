@@ -10,51 +10,50 @@ import { MdOutlineKeyboardArrowRight, MdOutlineKeyboardArrowLeft } from "react-i
 export default function Repartidores() {
 
 
-    const [step, setStep] = useState(0)
-
-    const onClickStepRest = () => {
-        if (step === 0) return setStep(2)
-        setStep(step - 1)
-    }
-
-    const onClickStep = () => {
-        if (step === 2) return setStep(0)
-        setStep(step + 1)
-    }
 
 
     return (
-        <>
+        <div className=''>
             <h3 className='text-[40px] font-bold  text-[#f6bd60]  font-titulo text-center'>TYPES</h3>
-            <div className="flex justify-center mx-auto items-center">
-
-                <MdOutlineKeyboardArrowLeft onClick={onClickStepRest} className="cursor-pointer z-[100] relative" color={"#f1f1f1"} size={50} />
-                <div className="w-[18rem] h-[15rem] overflow-hidden  m-5 z-[99]" >
-                    <div className={`flex relative transition-all duration-500 `} style={{ left: `-${step * 18}rem` }}>
-
-                        <div className={`flex`}>
-
-                            <video muted autoPlay loop className="w-[24rem] rounded-lg" >
-                                <source src={sobre1}></source>
-                            </video>
-                            <video muted autoPlay loop className="w-[24rem] rounded-lg" >
-                                <source src={sobre2}></source>
-                            </video>
-                            <video muted autoPlay loop className="w-[24rem] rounded-lg" >
-                                <source src={sobre3}></source>
-                            </video>
-                        </div>
+            <div className="flex  justify-center mx-auto items-center  z-[99] ">
 
 
+                <div className='w-[18rem] m-5 z-[99]'>
+                    <video muted autoPlay loop className="w-[24rem] rounded-lg" >
+                        <source src={sobre1}></source>
+                    </video>
+                    <p className=' text-[#a19b9b] p-3 text-left text-md'>Praesent quam turpis, suscipit et nulla vitae, lacinia eleifend turpis. Donec accumsan mauris sed fermentum egestas. Etiam eu placerat mi, a dapibus dolor. Nam libero .</p>
+                    <button onClick={() => { }} className="mx-auto p-2  w-[15rem] bg-[#149fd6] hover:scale-110 transition-all duration-200 rounded-xl text-white text-xl"> Buy </button>
 
-                    </div>
                 </div>
-                <MdOutlineKeyboardArrowRight onClick={onClickStep} className="cursor-pointer z-[100] relative" color={"#f1f1f1"} size={50} />
+                <div className='w-[18rem] m-5 mx-[80px] '>
+                    <video muted autoPlay loop className="w-[24rem] rounded-lg mx-4" >
+                        <source src={sobre2}></source>
+                    </video>
+                    <p className=' text-[#a19b9b] p-3 text-left text-md'>Praesent quam turpis, suscipit et nulla vitae, lacinia eleifend turpis. Donec accumsan mauris sed fermentum egestas. Etiam eu placerat mi, a dapibus dolor. Nam libero .</p>
+                    <button onClick={() => { }} className="mx-auto p-2  w-[15rem] bg-[#149fd6] hover:scale-110 transition-all duration-200 rounded-xl text-white text-xl"> Buy </button>
+
+                </div>
+                <div className='w-[18rem] m-5 z-[99] '>
+                    <video muted autoPlay loop className="w-[24rem] rounded-lg" >
+                        <source src={sobre3}></source>
+
+                    </video>
+                    <p className='text-[#a19b9b] p-3 text-left text-md'>Praesent quam turpis, suscipit et nulla vitae, lacinia eleifend turpis. Donec accumsan mauris sed fermentum egestas. Etiam eu placerat mi, a dapibus dolor. Nam libero .</p>
+                    <button onClick={() => { }} className="mx-auto p-2  w-[15rem] bg-[#149fd6] hover:scale-110 transition-all duration-200 rounded-xl text-white text-xl"> Buy </button>
+
+                </div>
+
+
+
+
+
+
 
 
 
             </div>
-            <button onClick={() => { }} className="mx-auto p-2  w-[15rem] bg-[#149fd6] hover:scale-110 transition-all duration-200 rounded-xl text-white text-xl"> Buy </button>
-        </>
+            {/*  <button onClick={() => { }} className="mx-auto p-2  w-[15rem] bg-[#149fd6] hover:scale-110 transition-all duration-200 rounded-xl text-white text-xl"> Buy </button> */}
+        </div>
     )
 }

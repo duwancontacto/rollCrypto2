@@ -19,7 +19,7 @@ export default function ConnectWallet() {
     const Account = () => (
         <>
             <WhitelistPackage />
-            <p className="text-[#beb9b9] font-mono  px-10 text-center text-lg my-16 break-all"> Wallet: {account} </p>
+            <p className="text-[#beb9b9] font-mono  px-10 text-center text-lg my-2 break-all"> Wallet: {account} </p>
         </>
     )
 
@@ -30,7 +30,7 @@ export default function ConnectWallet() {
 
 
     return (
-        <section className="w-full lg:w-3/6 text-center pb-[100px]  ">
+        <section className={`w-full ${account ? "lg:w-full" : "lg:w-3/6 "} text-center pb-[70px]  `}>
             {account ? <Account /> : <NotAccount />}
             <p className="text-[#beb9b9] font-mono  px-10 text-center text-sm  "> Having Trouble? Contact us at test@test.com </p>
         </section>
