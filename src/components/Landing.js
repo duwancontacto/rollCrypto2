@@ -35,7 +35,7 @@ function App() {
             <Modal modal={modal} setModal={setModal} > <h3 className=' ml-3 mt-5 my-2 text-[#f9c74f] font-semibold text-3xl font-titulo'>Coming Soon...</h3></Modal>
             <ModalMenu botonActive={botonActive} setBotonActive={setBotonActive} />
 
-            <div className="videoContainer"><video ref={videoRef} src={video} autoPlay={true} loop className="w-full relative top-0 lg:top-[-100px]" />  </div>
+            <div className="videoContainer"> <video ref={videoRef} src={video} autoPlay={true} loop className="w-full relative top-0 lg:top-[-120px]" type="video/mp4" /></div>
 
             <div className="overlay">  </div>
 
