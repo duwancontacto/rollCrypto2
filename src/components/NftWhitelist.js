@@ -39,7 +39,7 @@ export default function NftWhitelist() {
                 <div className="w-[24rem] h-[25rem] overflow-hidden  m-5 z-[99] pt-[40px]" >
                     <div className={`flex relative transition-all duration-500 `} style={{ left: `-${step * 24}rem` }}>
 
-                        <video muted autoPlay loop className="w-[24rem] rounded-full" >
+                        <video autoPlay loop className="w-[24rem] rounded-full" >
                             <source src={nft1}></source>
                         </video>
                         <video muted autoPlay loop className="w-[24rem] rounded-full" >

@@ -17,6 +17,7 @@ const Mint = lazy(() => import("./components/Mint.js/Mint"))
 
 
 export default function App() {
+
   return (
     <Web3ReactProvider getLibrary={getLibrary}>
       <Provider store={store}>

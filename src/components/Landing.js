@@ -1,6 +1,6 @@
-import React, { useState, useRef } from 'react'
-import cars from "../assets/img/video.mp4"
-
+import React, { useState, useRef, useEffect } from 'react'
+import video from "../assets/img/video.mp4"
+import ReactPlayer from 'react-player'
 import { TiDocumentText } from 'react-icons/ti';
 import { CgFileDocument } from 'react-icons/cg';
 import { RiGamepadLine } from 'react-icons/ri';
@@ -26,6 +26,8 @@ function App() {
     const [modal, setModal] = useState(false)
     const videoRef = useRef()
     const [botonActive, setBotonActive] = useState(false)
+
+
     return (
 
         <div className="headerComponent">
@@ -33,7 +35,8 @@ function App() {
             <Modal modal={modal} setModal={setModal} > <h3 className=' ml-3 mt-5 my-2 text-[#f9c74f] font-semibold text-3xl font-titulo'>Coming Soon...</h3></Modal>
             <ModalMenu botonActive={botonActive} setBotonActive={setBotonActive} />
 
-            <div className="videoContainer"> <video ref={videoRef} muted src={cars} autoPlay={true} className="w-full relative top-0 lg:top-[-100px]" /></div>
+            <div className="videoContainer"><video ref={videoRef} src={video} autoPlay={true} loop className="w-full relative top-0 lg:top-[-100px]" />  </div>
+
             <div className="overlay">  </div>
 
             <div className="absolutee headerTitle">
