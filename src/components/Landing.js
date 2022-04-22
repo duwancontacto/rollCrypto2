@@ -25,7 +25,24 @@ function App() {
     const history = useNavigate()
     const [modal, setModal] = useState(false)
     const videoRef = useRef()
+    const buttonRef = useRef()
     const [botonActive, setBotonActive] = useState(false)
+
+    useEffect(() => {
+        setInterval(() => {
+
+            if (buttonRef.current) buttonRef.current.click()
+
+        }, 2000)
+
+
+    }, [buttonRef])
+
+
+    const handleClick = () => {
+        if (videoRef.current) videoRef.current.play()
+
+    }
 
 
     return (
@@ -35,7 +52,12 @@ function App() {
             <Modal modal={modal} setModal={setModal} > <h3 className=' ml-3 mt-5 my-2 text-[#f9c74f] font-semibold text-3xl font-titulo'>Coming Soon...</h3></Modal>
             <ModalMenu botonActive={botonActive} setBotonActive={setBotonActive} />
 
-            <div className="videoContainer"><video ref={videoRef} src={video} autoPlay={true} loop className="w-full relative top-0 lg:top-[-100px]" />  </div>
+            <div className="videoContainer">
+                <video ref={videoRef} loop autoPlay className="w-full relative top-0 lg:top-[-100px]" >
+                    <source type="video/mp4" src={video} />
+                </video>
+            </div>
+
 
             <div className="overlay">  </div>
 
@@ -43,7 +65,9 @@ function App() {
                 {botonActive === false && <button className='cursor-pointer absolute left-5 top-5 z-[99]' onClick={() => { setBotonActive(true) }} >< GiHamburgerMenu /></button>}
 
 
-                <h3 className='text-[30px] md:text-[58px] font-bold mb-4 text-[#f6bd60] mt-2 md:mt-0 font-titulo'>GOOD ROLL CRYPTO</h3>
+                <h3 className='text-[30px] md:text-[58px] font-bold mb-4 text-[#f6bd60] mt-2 md:mt-0 font-titulo'>GOOD ROLL CRYPTO
+                    <button ref={buttonRef} onClick={handleClick}>test</button>
+                </h3>
 
 
                 <div className='flex flex-col justify-end items-end w-full px-6'>
