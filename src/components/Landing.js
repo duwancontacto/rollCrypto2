@@ -1,6 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react'
 import video from "../assets/img/video1.mp4"
-import ReactPlayer from 'react-player'
 import { TiDocumentText } from 'react-icons/ti';
 import { CgFileDocument } from 'react-icons/cg';
 import { RiGamepadLine } from 'react-icons/ri';
