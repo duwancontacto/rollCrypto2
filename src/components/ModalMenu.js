@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { AiOutlineCloseCircle } from 'react-icons/ai';
 import Modal from './Modal';
 import NftWhitelist from './NftWhitelist';
-import Repartidores from './Repartidores';
+import Dealers from "../components/Dealers"
 
 
 
@@ -32,7 +32,7 @@ export default function ModalMenu({ botonActive, setBotonActive }) {
 
             <Modal modal={modal} setModal={setModal} >
 
-                {modal === "Repartidores" && <Repartidores />}
+                {modal === "Dealers" && <Dealers />}
                 {modal === "Whitelist" && <NftWhitelist />}
                 {modal === "FrequentQuestions" && <FrequentQuestions />}
                 {modal === "History" && <History />}
@@ -47,7 +47,7 @@ export default function ModalMenu({ botonActive, setBotonActive }) {
             <p className='text-[rgba(211,211,211,0.81)] hover:text-white pl-5  flex justify-start items-center cursor-pointer  '>Buy PancakesSwap <p className='text-[#f9c64fcf] text-md mx-2'>(comming soon...)</p></p>
             <h3 className=' ml-2 mt-5 my-2 text-lg text-[#f9c74f] font-semibold'> NFTS</h3>
             <p onClick={() => { setModal("Managers") }} className='text-[rgba(211,211,211,0.81)] hover:text-white pl-5 flex justify-start items-center cursor-pointer  '>Managers</p>
-            <p onClick={() => { setModal("Repartidores") }} className='text-[rgba(211,211,211,0.81)]  hover:text-white pl-5 flex justify-start items-center my-2 cursor-pointer  '>Dealers</p>
+            <p onClick={() => { setModal("Dealers") }} className='text-[rgba(211,211,211,0.81)]  hover:text-white pl-5 flex justify-start items-center my-2 cursor-pointer  '>Dealers</p>
             <p onClick={() => { setModal("Whitelist") }} className='text-[rgba(211,211,211,0.81)] hover:text-white pl-5 flex justify-start items-center cursor-pointer mt-2 '>Whitelist </p>
             <p className='text-[rgba(211,211,211,0.81)] pl-5  hover:text-white flex justify-start items-center cursor-pointer  '>Stores <p className='text-[#f9c64fcf] text-md mx-2'>(comming soon...)</p></p>
             <h3 onClick={() => { setModal("History") }} className=' cursor-pointer ml-3  my-2 text-[#f9c74f] font-semibold text-lg pt-10'>History</h3>
