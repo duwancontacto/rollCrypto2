@@ -1,29 +1,29 @@
 import React, { useEffect, useState } from 'react'
 
-import encargado1 from "../assets/img/1.1.png"
-import encargado2 from "../assets/img/1.2.png"
-import encargado3 from "../assets/img/1.png"
-import encargado4 from "../assets/img/1.3.png"
-import encargado5 from "../assets/img/1.4.png"
+import encargado1 from "../assets/img/1.1.webp"
+import encargado2 from "../assets/img/1.2.webp"
+import encargado3 from "../assets/img/1.webp"
+import encargado4 from "../assets/img/1.3.webp"
+import encargado5 from "../assets/img/1.4.webp"
 
 
-import encargado1a from "../assets/img/2.1.png"
-import encargado2a from "../assets/img/2.2.png"
-import encargado3a from "../assets/img/2.png"
-import encargado4a from "../assets/img/2.3.png"
-import encargado5a from "../assets/img/2.4.png"
+import encargado1a from "../assets/img/2.1.webp"
+import encargado2a from "../assets/img/2.2.webp"
+import encargado3a from "../assets/img/2.webp"
+import encargado4a from "../assets/img/2.3.webp"
+import encargado5a from "../assets/img/2.4.webp"
 
-import encargado1b from "../assets/img/3.1.png"
-import encargado2b from "../assets/img/3.2.png"
-import encargado3b from "../assets/img/3.png"
-import encargado4b from "../assets/img/3.3.png"
-import encargado5b from "../assets/img/3.4.png"
+import encargado1b from "../assets/img/3.1.webp"
+import encargado2b from "../assets/img/3.2.webp"
+import encargado3b from "../assets/img/3.webp"
+import encargado4b from "../assets/img/3.3.webp"
+import encargado5b from "../assets/img/3.4.webp"
 
-import encargado1c from "../assets/img/4.1.png"
-import encargado2c from "../assets/img/4.2.png"
-import encargado3c from "../assets/img/4.png"
-import encargado4c from "../assets/img/4.3.png"
-import encargado5c from "../assets/img/4.4.png"
+import encargado1c from "../assets/img/4.1.webp"
+import encargado2c from "../assets/img/4.2.webp"
+import encargado3c from "../assets/img/4.webp"
+import encargado4c from "../assets/img/4.3.webp"
+import encargado5c from "../assets/img/4.4.webp"
 
 
 

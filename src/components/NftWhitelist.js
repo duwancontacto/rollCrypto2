@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import nft1 from "../assets/img/nft1.mp4"
-import cerdo from "../assets/img/cerdo.mp4"
-import intwolf from "../assets/img/intwolf.mp4"
-import nft2 from "../assets/img/nft2.mp4"
-import nft3 from "../assets/img/nft3.mp4"
+import nft1 from "../assets/img/nft1copy.mp4"
+import cerdo from "../assets/img/cerdoCopy.mp4"
+import intwolf from "../assets/img/intwolfCopy.mp4"
+import nft2 from "../assets/img/nft2copy.mp4"
+import nft3 from "../assets/img/nft3Copy.mp4"
 
 import { MdOutlineKeyboardArrowRight, MdOutlineKeyboardArrowLeft } from "react-icons/md"
 

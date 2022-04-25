@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react'
-import video from "../assets/img/video.mp4"
+import video from "../assets/img/video1.mp4"
 import ReactPlayer from 'react-player'
 import { TiDocumentText } from 'react-icons/ti';
 import { CgFileDocument } from 'react-icons/cg';
@@ -56,8 +56,8 @@ function App() {
                 {botonActive === false && <button className='cursor-pointer absolute left-5 top-5 z-[99]' onClick={() => { setBotonActive(true) }} >< GiHamburgerMenu /></button>}
 
 
-                {/*  <h3 className='text-[30px] md:text-[58px] font-bold mb-4 text-[#f6bd60] mt-2 md:mt-0 font-titulo'>GOOD ROLL CRYPTO
-                    <button ref={buttonRef} onClick={handleClick}></button>
+                {/*   <h3 className='text-[30px] md:text-[58px] font-bold mb-4 text-[#f6bd60] mt-2 md:mt-0 font-titulo'>
+                    <button ref={buttonRef} onClick={handleClick}>GOOD ROLL CRYPTO</button>
                 </h3> */}
 
 
