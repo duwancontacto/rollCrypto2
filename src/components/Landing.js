@@ -30,19 +30,10 @@ function App() {
 
     useEffect(() => {
         setInterval(() => {
-
-            if (buttonRef.current) buttonRef.current.click()
-
+            if (videoRef.current) videoRef.current.play()
         }, 2000)
-
-
     }, [buttonRef])
 
-
-    const handleClick = () => {
-        if (videoRef.current) videoRef.current.play()
-
-    }
 
 
     return (
@@ -65,9 +56,9 @@ function App() {
                 {botonActive === false && <button className='cursor-pointer absolute left-5 top-5 z-[99]' onClick={() => { setBotonActive(true) }} >< GiHamburgerMenu /></button>}
 
 
-                <h3 className='text-[30px] md:text-[58px] font-bold mb-4 text-[#f6bd60] mt-2 md:mt-0 font-titulo'>GOOD ROLL CRYPTO
-                    <button ref={buttonRef} onClick={handleClick}>test</button>
-                </h3>
+                {/*  <h3 className='text-[30px] md:text-[58px] font-bold mb-4 text-[#f6bd60] mt-2 md:mt-0 font-titulo'>GOOD ROLL CRYPTO
+                    <button ref={buttonRef} onClick={handleClick}></button>
+                </h3> */}
 
 
                 <div className='flex flex-col justify-end items-end w-full px-6'>
@@ -75,7 +66,7 @@ function App() {
                     <a target={"_blank"} href='https://twitter.com/GoodRollCrypto?t=4C2qXBsf84nSYZPnHATkzA&s=08' rel="noreferrer" className=']  my-2 px-3 py-1 rounded-2xl cursor-pointer  fondo-botones '><FiTwitter size={"1.4rem"} /></a>
                     <a target={"_blank"} href='https://discord.com/invite/Da9n28mvs2' rel="noreferrer" className='  px-3 py-1  rounded-2xl cursor-pointer  fondo-botones '><SiDiscord size={"1.4rem"} /> </a>
                     <a target={"_blank"} href='https://t.me/+1tQ6xeQ5e0s4YzI8' rel="noreferrer" className='  my-2 px-3 py-1  rounded-2xl cursor-pointer  fondo-botones '><BsTelegram size={"1.4rem"} /> </a>
-                    <a target={"_blank"} href='https://t.me/+1tQ6xeQ5e0s4YzI8' rel="noreferrer" className='   px-3 py-1  rounded-2xl cursor-pointer  fondo-botones '><AiFillYoutube size={"1.4rem"} /> </a>
+                    <a target={"_blank"} href='https://www.youtube.com/channel/UCsH7Lu_hvqsTMHJxAvBqLsw/videos' rel="noreferrer" className='   px-3 py-1  rounded-2xl cursor-pointer  fondo-botones '><AiFillYoutube size={"1.4rem"} /> </a>
 
                 </div>
 
