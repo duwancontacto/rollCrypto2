@@ -55,7 +55,7 @@ function App() {
             <ModalMenu botonActive={botonActive} setBotonActive={setBotonActive} />
 
             <div className="videoContainer">
-                <video ref={videoRef} loop autoPlay className="w-full relative top-0 lg:top-[-100px]" >
+                <video ref={videoRef} muted loop autoPlay className="w-full relative top-0 lg:top-[-100px]" >
                     <source type="video/mp4" src={video} />
                 </video>
             </div>
