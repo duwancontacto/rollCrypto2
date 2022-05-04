@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function FrequentQuestions() {
     return (
-        <div className="text-left overflow-auto  h-[80vh]  mt-20">
+        <div className="text-left overflow-auto  h-[80vh] w-[89vw] md:w-[50vw] mt-20 ">
 
             <h3 className=' ml-3 mt-5 my-2 text-[#f9c74f] font-semibold text-xl font-titulo'>What is the Good Roll Crypto metaverse?</h3>
             <p className="text-[rgba(211,211,211,0.81)] text-lg pb-4 px-4">It is a 3 versions in 1 NFT game consisting of: one click to earn, play to era and virtual to earn.</p>

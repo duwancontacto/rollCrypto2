@@ -51,7 +51,7 @@ export default function ModalMenu({ botonActive, setBotonActive }) {
             <p onClick={() => { setModal("Managers") }} className='text-[rgba(211,211,211,0.81)] hover:text-white pl-5 flex justify-start items-center cursor-pointer  '>Managers</p>
             <p onClick={() => { setModal("Dealers") }} className='text-[rgba(211,211,211,0.81)]  hover:text-white pl-5 flex justify-start items-center my-2 cursor-pointer  '>Dealers</p>
             <p onClick={() => { setModal("Whitelist") }} className='text-[rgba(211,211,211,0.81)] hover:text-white pl-5 flex justify-start items-center cursor-pointer mt-2 '>Whitelist </p>
-            <p onClick={() => { setModal("Store") }} className='text-[rgba(211,211,211,0.81)] pl-5  hover:text-white flex justify-start items-center cursor-pointer  '>Stores </p>
+            <p onClick={() => { setModal("Store") }} className='text-[rgba(211,211,211,0.81)] pl-5  hover:text-white flex justify-start items-center cursor-pointer mt-2 '>Stores </p>
             <h3 onClick={() => { setModal("History") }} className=' cursor-pointer ml-3  my-2 text-[#f9c74f] font-semibold text-lg pt-10'>History</h3>
             <h3 onClick={() => { setModal("Partners") }} className=' cursor-pointer ml-3  my-2 text-[#f9c74f] font-semibold text-lg'>Partners</h3>
             <h3 onClick={() => { setModal("FrequentQuestions") }} className=' cursor-pointer ml-3 text-[#f9c74f] font-semibold text-lg'>Frequent questions</h3>

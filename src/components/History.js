@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function History() {
     return (
-        <div className='text-left'>
+        <div className='text-left overflow-auto  h-[80vh] w-[89vw] md:w-[50vw] '>
             <h3 className=' cursor-pointer  text-[#f9c74f] font-semibold text-[30px] font-titulo text-center'>History</h3>
 
             <div>
