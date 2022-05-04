@@ -33,6 +33,18 @@ function App() {
         }, 2000)
     }, [buttonRef])
 
+    const downloadFile = () => {
+
+
+        let link = document.createElement("a");
+        link.download = "Whitepaper.pdf";
+        link.href = "/files/WHITEPAPER.pdf";
+        link.style.display = "none";
+        document.body.appendChild(link);
+        link.click();
+
+    }
+
 
 
     return (
@@ -60,7 +72,7 @@ function App() {
                 </h3> */}
 
 
-                <div className='flex flex-col justify-end items-end w-full px-6'>
+                <div className='flex flex-col justify-end items-end w-full px-6 pt-5'>
                     <a target={"_blank"} href='https://www.instagram.com/goodrollcrypto/' rel="noreferrer" className=' px-3 py-1 rounded-2xl cursor-pointer  fondo-botones '><GrInstagram size={"1.4rem"} />  </a>
                     <a target={"_blank"} href='https://twitter.com/GoodRollCrypto?t=4C2qXBsf84nSYZPnHATkzA&s=08' rel="noreferrer" className=']  my-2 px-3 py-1 rounded-2xl cursor-pointer  fondo-botones '><FiTwitter size={"1.4rem"} /></a>
                     <a target={"_blank"} href='https://discord.com/invite/Da9n28mvs2' rel="noreferrer" className='  px-3 py-1  rounded-2xl cursor-pointer  fondo-botones '><SiDiscord size={"1.4rem"} /> </a>
@@ -71,7 +83,7 @@ function App() {
 
                 <div className=' absolute bottom-[50px] w-full flex justify-center flex-col lg:flex-row p-2 md:p-2'>
                     <button onClick={() => { history("/whitelist") }} className='flex items-center bg-[#4361ee] mt-3 justify-center mx-2 lg:mt-0 px-2 rounded-md py-1 cursor-pointer fondo-botones '><p className='mx-1'>Whitelist </p><TiDocumentText size={"1.6rem"} /></button>
-                    <button className='flex items-center bg-[#4361ee] mt-3 justify-center mx-2 lg:mt-0 px-2 rounded-md  py-1 cursor-pointer text-sm fondo-botones '><p className='mx-1'>Whitepaper</p> <CgFileDocument size={"1.4rem"} color={"#fff"} /></button>
+                    <a /* onClick={downloadFile} */ target={"_blank"} href='https://drive.google.com/file/d/1gVqSwHZuyziq_QWCG0uLdZQ-gpJQAVuz/view' rel="noreferrer" className='flex items-center bg-[#4361ee] mt-3 justify-center mx-2 lg:mt-0 px-2 rounded-md  py-1 cursor-pointer text-sm fondo-botones '><p className='mx-1'>Whitepaper</p> <CgFileDocument size={"1.4rem"} color={"#fff"} /></a>
                     <button onClick={() => setModal(true)} className='flex items-center bg-[#4361ee] mt-3 justify-center  mx-2 lg:mt-0 px-0 md:px-1 rounded-md  py-1 cursor-pointer text-m-sm md:text-md fondo-botones  '><p p className='mx-1'>Play the Game </p><RiGamepadLine size={"1.4rem"} className="mr-2" /></button>
 
                 </div>
