@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import nft1 from "../assets/img/nft1copy.mp4"
+import nft1 from "../assets/img/nft1.mp4"
 import cerdo from "../assets/img/cerdoCopy.mp4"
 import intwolf from "../assets/img/intwolfCopy.mp4"
 import nft2 from "../assets/img/nft2copy.mp4"
