@@ -1,9 +1,15 @@
 import React, { useState } from 'react'
-import nft1 from "../assets/img/nft1.mp4"
+import nft1 from "../assets/img/nft1copy.mp4"
 import cerdo from "../assets/img/cerdoCopy.mp4"
 import intwolf from "../assets/img/intwolfCopy.mp4"
 import nft2 from "../assets/img/nft2copy.mp4"
 import nft3 from "../assets/img/nft3Copy.mp4"
+
+import nft1mobile from "../assets/img/nft1mobile.gif"
+import cerdomobile from "../assets/img/cerdomobile.gif"
+import intwolfmobile from "../assets/img/intwolfmobile.gif"
+import nft2mobile from "../assets/img/nft2mobile.gif"
+import nft3mobile from "../assets/img/nft3mobile.gif"
 
 import { MdOutlineKeyboardArrowRight, MdOutlineKeyboardArrowLeft } from "react-icons/md"
 
@@ -74,22 +80,13 @@ export default function NftWhitelist() {
                 <div className="w-[17rem] h-[25rem] overflow-hidden  z-[99] pt-[80px]" >
                     <div className={`flex relative transition-all duration-500 `} style={{ left: `-${step * 17}rem` }}>
 
-                        <video autoPlay loop className="w-[17rem] rounded-full" >
-                            <source src={nft1}></source>
-                        </video>
-                        <video muted autoPlay loop className="w-[17rem] rounded-full" >
-                            <source src={cerdo}></source>
-                        </video>
-                        <video muted autoPlay loop className="w-[17rem] rounded-full" >
-                            <source src={intwolf}></source>
-                        </video>
 
-                        <video muted autoPlay loop className="w-[17rem] rounded-full" >
-                            <source src={nft2}></source>
-                        </video>
-                        <video muted autoPlay loop className="w-[17rem] rounded-full" >
-                            <source src={nft3}></source>
-                        </video>
+                        <img src={nft1mobile} className="w-[17rem] rounded-full" alt='nft1mobile' />
+                        <img src={cerdomobile} className="w-[17rem] rounded-full" alt='cerdomobile' />
+                        <img src={intwolfmobile} className="w-[17rem] rounded-full" alt='intwolfmobile' />
+                        <img src={nft2mobile} className="w-[17rem] rounded-full" alt='nft2mobile' />
+                        <img src={nft3mobile} className="w-[17rem] rounded-full" alt='nft3mobile' />
+
 
 
 
