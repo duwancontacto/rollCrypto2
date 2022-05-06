@@ -5,11 +5,11 @@ import intwolf from "../assets/img/intwolfCopy.mp4"
 import nft2 from "../assets/img/nft2copy.mp4"
 import nft3 from "../assets/img/nft3Copy.mp4"
 
-import nft1mobile from "../assets/img/nft1mobile.gif"
-import cerdomobile from "../assets/img/cerdomobile.gif"
-import intwolfmobile from "../assets/img/intwolfmobile.gif"
-import nft2mobile from "../assets/img/nft2mobile.gif"
-import nft3mobile from "../assets/img/nft3mobile.gif"
+import nft1mobile from "../assets/img/nft1mobile1.gif"
+import cerdomobile from "../assets/img/CerdoMobile1.gif"
+import intwolfmobile from "../assets/img/intwolfMobile1.gif"
+import nft2mobile from "../assets/img/nft2mobile1.gif"
+import nft3mobile from "../assets/img/nft3mobile1.gif"
 
 import { MdOutlineKeyboardArrowRight, MdOutlineKeyboardArrowLeft } from "react-icons/md"
 
